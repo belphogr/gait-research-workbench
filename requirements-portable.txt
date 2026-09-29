@@ -1,0 +1,10 @@
+fastapi==0.141.1
+uvicorn==0.54.0
+python-multipart==0.0.32
+scikit-learn==1.8.0
+numpy==2.5.0
+pandas==3.0.3
+scipy==1.18.0
+joblib==1.5.3
+torch==2.11.0
+mediapipe==1.0.1

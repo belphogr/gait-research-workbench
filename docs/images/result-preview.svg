@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1265" height="720" viewBox="0 0 1265 720" role="img" aria-label="步态评估结果界面示意，图中均为模拟数据">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#eef7fb"/><stop offset="1" stop-color="#fff"/></linearGradient>
+    <linearGradient id="teal" x2="1" y2="1"><stop stop-color="#25b3ae"/><stop offset="1" stop-color="#147d88"/></linearGradient>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#163650}
+      .muted{fill:#8095a5}.small{font-size:15px}.label{font-size:16px;font-weight:600}.title{font-size:30px;font-weight:700}.sub{font-size:20px;font-weight:700}
+      .grid{stroke:#e3edf2;stroke-width:1}.axis{stroke:#d8e5eb;stroke-width:1}
+    </style>
+  </defs>
+  <rect width="1265" height="720" fill="url(#bg)"/>
+  <rect width="211" height="720" fill="#123052"/>
+  <path d="M30 43h13l7-17 13 39 10-22h13" fill="none" stroke="#7dd6d3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="96" y="55" font-size="24" font-weight="700" fill="#fff">步态研究</text><text x="96" y="78" font-size="11" letter-spacing="4" fill="#9ccad2">GAITLAB</text>
+  <rect x="14" y="122" width="182" height="50" rx="13" fill="#245278"/>
+  <text x="42" y="154" class="label" fill="#fff">▦  评估工作台</text>
+  <text x="42" y="218" class="label" fill="#c1d3e2">◴  评估记录</text>
+  <text x="42" y="277" class="label" fill="#c1d3e2">▷  演示样例</text>
+  <rect x="240" y="24" width="996" height="672" rx="24" fill="#fff" stroke="#dfebf1"/>
+  <text x="271" y="72" class="title">步态评估结果</text>
+  <text x="271" y="104" class="small muted">人体姿态 · 关节运动 · 步态观察画像</text>
+  <rect x="985" y="47" width="218" height="38" rx="19" fill="#e6f6f5"/>
+  <text x="1007" y="72" font-size="14" font-weight="700" fill="#0b8586">模拟数据 · 界面示意</text>
+  <rect x="267" y="135" width="514" height="292" rx="18" fill="#f5fafc" stroke="#e4eff3"/>
+  <text x="291" y="169" class="sub">三维运动预览</text>
+  <g class="grid">
+    <path d="M291 205H756M291 245H756M291 285H756M291 325H756M291 365H756"/>
+    <path d="M332 192V383M397 192V383M462 192V383M527 192V383M592 192V383M657 192V383M722 192V383"/>
+  </g>
+  <g stroke="#18949e" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M515 216l-4 36m4-36l-28 35m28-35l30 34M511 252l-6 45m-18-46l-14 58-27 16m99-75l16 57 27 13m-83-23l-28 40-14 34m34-74l26 41 13 34"/>
+  </g>
+  <g fill="#fff" stroke="#18949e" stroke-width="3">
+    <circle cx="515" cy="208" r="10"/><circle cx="511" cy="252" r="5"/><circle cx="487" cy="251" r="5"/><circle cx="545" cy="250" r="5"/><circle cx="473" cy="309" r="5"/><circle cx="561" cy="307" r="5"/><circle cx="505" cy="297" r="5"/><circle cx="477" cy="337" r="5"/><circle cx="531" cy="338" r="5"/>
+  </g>
+  <rect x="292" y="393" width="422" height="6" rx="3" fill="#d7e7ed"/><rect x="292" y="393" width="210" height="6" rx="3" fill="#20a8a9"/><circle cx="502" cy="396" r="9" fill="#198f99"/>
+  <text x="718" y="402" class="small muted">50%</text>
+  <rect x="802" y="135" width="406" height="292" rx="18" fill="#f8fcfd" stroke="#e4eff3"/>
+  <text x="828" y="170" class="sub">步态功能分级</text>
+  <text x="1092" y="197" font-size="43" font-weight="800" fill="#12898b">L1</text><text x="1167" y="194" class="small muted">级</text>
+  <text x="828" y="236" class="small">L0</text><text x="1144" y="236" class="small">18%</text>
+  <rect x="828" y="249" width="349" height="9" rx="5" fill="#e4edf0"/><rect x="828" y="249" width="63" height="9" rx="5" fill="#9bbbc5"/>
+  <text x="828" y="290" class="small">L1</text><text x="1144" y="290" class="small">64%</text>
+  <rect x="828" y="303" width="349" height="9" rx="5" fill="#e4edf0"/><rect x="828" y="303" width="223" height="9" rx="5" fill="url(#teal)"/>
+  <text x="828" y="344" class="small">L2</text><text x="1144" y="344" class="small">18%</text>
+  <rect x="828" y="357" width="349" height="9" rx="5" fill="#e4edf0"/><rect x="828" y="357" width="63" height="9" rx="5" fill="#9bbbc5"/>
+  <text x="828" y="397" class="small muted">概率仅为界面占位示例</text>
+  <rect x="267" y="446" width="514" height="226" rx="18" fill="#fff" stroke="#e4eff3"/>
+  <text x="291" y="480" class="sub">关节角度曲线</text>
+  <path d="M309 505V636H751" fill="none" stroke="#dbe7ed" stroke-width="2"/>
+  <path d="M310 610L342 590 373 583 404 546 436 555 467 579 498 568 529 532 560 539 591 563 622 546 653 524 685 548 718 533 750 512" fill="none" stroke="#61a5d5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M310 619L342 598 373 561 404 574 436 594 467 603 498 587 529 556 560 571 591 584 622 565 653 542 685 554 718 575 750 545" fill="none" stroke="#23aaa7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="317" y="654" class="small muted">0%</text><text x="719" y="654" class="small muted">100%</text>
+  <rect x="802" y="446" width="406" height="226" rx="18" fill="#fff" stroke="#e4eff3"/>
+  <text x="828" y="480" class="sub">步态观察画像</text>
+  <g transform="translate(971 575)">
+    <polygon points="0,-68 65,-21 40,55 -40,55 -65,-21" fill="none" stroke="#d8ecf2" stroke-width="2"/>
+    <polygon points="0,-47 43,-14 26,36 -26,36 -43,-14" fill="none" stroke="#e4f0f4" stroke-width="2"/>
+    <path d="M0 -68V55M-65 -21L40 55M65 -21L-40 55" fill="none" stroke="#e7f0f4"/>
+    <polygon points="0,-56 48,-16 22,30 -30,42 -38,-12" fill="#28b1b0" fill-opacity=".25" stroke="#209fa5" stroke-width="3"/>
+  </g>
+  <text x="959" y="503" class="small muted">质量</text><text x="1101" y="552" class="small muted">节律</text><text x="1053" y="649" class="small muted">协调</text><text x="834" y="649" class="small muted">稳定</text><text x="816" y="552" class="small muted">活动</text>
+</svg>

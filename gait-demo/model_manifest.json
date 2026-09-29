@@ -1,0 +1,60 @@
+{
+  "model_policy": "W 原始 stride 树 / OW、WT 原始 work123 integrate CNN；排除后续人级树及融合尝试",
+  "routes": {
+    "W": {
+      "type": "ExtraTrees",
+      "name": "原始 stride ExtraTrees · W",
+      "weight": "models\\tree_model_w\\models\\extra_trees_all_W.joblib",
+      "weight_sha256": "7d7881408c5e2f11c5248dcf10d0b5f443d1f42eac4b49b5becd7f696f1b097c",
+      "input": "40×57 → 10935 维",
+      "selection": "另一个任务首次接手时已交付的全量 W 模型；不使用人级树",
+      "coordinate_source": "source-calibrated Z",
+      "evaluation": "泛化性能引用原固定五折报告；样例推理不作为准确率证据"
+    },
+    "OW": {
+      "type": "CNN1D",
+      "name": "work123 integrate CNN · OW",
+      "weight": "models\\OW\\weight.pt",
+      "weight_sha256": "383bc7cecf9cf915c52f6b6c0140076044232af330a02bfe04fdcdd85bce0b5b",
+      "config": "models\\OW\\config.json",
+      "config_sha256": "a027d64a7c0a9ce7edf9be59012399ff6e68ba73ad5c518b4614719ad10fff5c",
+      "input": "45×243 + 标准化帧数",
+      "selection": "原始交付 seed 0，固定选择、不按测试结果择优；保存的是交叉验证检查点，不声称全量部署重训",
+      "frame_count_contract": "constant_40_verified",
+      "frame_count_evidence": {
+        "observed_lengths": [
+          40
+        ],
+        "labels_have_original_frame_count": false,
+        "scenario_stride_count": 503
+      },
+      "evaluation": "OW 为原始多种子研究成果；WT 为原单种子研究成果，样例不作为泛化证据"
+    },
+    "WT": {
+      "type": "CNN1D",
+      "name": "work123 integrate CNN · WT",
+      "weight": "models\\WT\\weight.pt",
+      "weight_sha256": "11c0a27a248cd584f7978890b6e4540702899549845d8b092270f250811c9064",
+      "config": "models\\WT\\config.json",
+      "config_sha256": "c2bbc37312b77081e14e23399f4b7d36048689830d7dc4f51f30a70a5d9d0a04",
+      "input": "45×243 + 标准化帧数",
+      "selection": "原始交付 seed 0，固定选择、不按测试结果择优；保存的是交叉验证检查点，不声称全量部署重训",
+      "frame_count_contract": "constant_40_verified",
+      "frame_count_evidence": {
+        "observed_lengths": [
+          40
+        ],
+        "labels_have_original_frame_count": false,
+        "scenario_stride_count": 237
+      },
+      "evaluation": "OW 为原始多种子研究成果；WT 为原单种子研究成果，样例不作为泛化证据"
+    }
+  },
+  "source_sha256": {
+    "models\\tree_model_w\\scripts\\run_w_xy_plus_calibrated_z_validation.py": "c57851eef089bbed3faa3ad1da9038b813b22d226a4faf8a4657d997e332188c",
+    "models\\tree_model_w\\scripts\\run_w_xy_source_unification_validation.py": "8a94cb8732414f094da818fb320bb45e38cd88bbb2d683ffc4d457edb3779812",
+    "models\\ml_utils\\gait_data_loader.py": "bf860496313b968f9779fae14b59e7276a6128d8082592ea574b9e07ee2b3b97",
+    "models\\ml_utils\\cnn1d_model.py": "42ce48e162d3fbd6ccf5dac7e09b0b8155ac15106eba43015c83a8bf3b710cae",
+    "models\\ml_utils\\positional_encoding.py": "80bee25fc276281ab8cb88e9ef3dc24841e7076f45a48f47ba293754fb4b9de9"
+  }
+}

@@ -1,0 +1,40 @@
+# Local environments and frontend builds
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+gait-demo/frontend/node_modules/
+gait-demo/frontend/dist/
+gait-demo/vendor/
+gait-demo/pose_vendor/
+
+# Research assets are distributed within the team only
+models/
+gait-demo/assets/
+gait-demo/recovered-vp3d/
+gait-demo/data/
+gait-demo/validation/
+gait-demo/samples.json
+gait-demo/video_pipeline.json
+
+# Prevent accidental publication of participant media and model artifacts
+*.mp4
+*.mov
+*.avi
+*.webm
+*.csv
+*.sqlite
+*.sqlite3
+*.db
+*.joblib
+*.pkl
+*.pth
+*.pt
+*.task
+*.npz
+*.npy
+*.zip
+
+.DS_Store
+Thumbs.db
