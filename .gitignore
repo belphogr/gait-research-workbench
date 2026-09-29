@@ -38,3 +38,4 @@ gait-demo/video_pipeline.json
 
 .DS_Store
 Thumbs.db
+.demo-capture/

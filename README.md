@@ -4,19 +4,27 @@ GaitLab 是面向**帕金森病辅助诊断研究**的本地步态视频分析�
 
 ## 产品预览
 
-以下三张为实际运行界面截图，结果布局图使用模拟数据，不含受试者影像或评估记录。
+以下截图来自实际运行的工作台；结果图由一次真实的视频上传与模型分析生成，没有使用概念图或手填结果。演示视频选用 [cottonbro studio 发布的 Pexels 素材](https://www.pexels.com/video/woman-in-white-dress-walking-outdoors-4887672/)（[Pexels 使用许可](https://www.pexels.com/license/)）。画面人物是素材演员，**不是患者或研究受试者**；图中的分级是未验证的实验性模型输出，不代表其健康状况，也不用于诊断。
 
-| 上传视频 | 摄像头录制 |
-| --- | --- |
-| ![视频上传工作台](docs/images/workbench.png) | ![摄像头录制入口](docs/images/camera.png) |
+**视频上传工作台**
 
-**三种场景的样例入口**
+![实际运行的视频上传工作台](docs/images/workbench.png)
 
-![W、OW、WT 场景样例列表](docs/images/samples.png)
+**上传后结果：骨架叠加视频与模型输出**
 
-**结果界面布局（模拟数据）**
+![实际上传分析后的结果页，视频中显示人体骨架叠加，右侧显示实验性分级与概率](docs/images/video-result.png)
 
-![模拟数据展示的结果界面，包括三维运动、分级、曲线与雷达图](docs/images/result-preview.svg)
+**骨架叠加视频的原始画面**
+
+![从实际分析产物中截取的骨架叠加视频帧](docs/images/pose-overlay.jpg)
+
+**关节曲线与左右侧对比**
+
+![同一次分析生成的关节角度曲线和左右侧活动范围](docs/images/video-charts.png)
+
+**W、OW、WT 场景样例入口**
+
+![实际运行的三种场景样例列表](docs/images/samples.png)
 
 ## 产品功能
 
